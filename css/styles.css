@@ -1,0 +1,278 @@
+*
+{
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+body
+{
+    background-color: rgb(40, 43, 48);
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+a
+{
+    color: inherit;
+    text-decoration: none;
+    cursor: default;
+}
+
+span
+{
+    color: rgb(142, 143, 145);
+    font-size: 17px;
+    text-align: left;
+}
+
+h4
+{
+    margin: 20px;
+}
+
+.background
+{
+    background-color: rgb(40, 43, 48);
+    height: 100vh;
+    margin: 0;
+}
+
+.toolbar
+{
+    background-color:rgb(40, 43, 48);
+    margin: 0;
+    padding: 0;
+    height : 54px;
+    min-height: 54px;
+    max-height: 54px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid  black;
+    z-index: 999;
+    overflow: visible !important;
+}
+
+.dropdown
+{
+    position: relative;
+    display: inline-block;
+    overflow: visible !important;
+}
+
+.dropdown-button
+{
+    background-color: rgb(40, 43, 48);
+    color: rgb(142, 143, 145);
+    height: 100%;
+    padding: 0 15px;
+    border: none;
+    text-align: center;
+    font-size: 17px;
+    transition-duration: 0.4s;
+}
+
+.dropdown:hover .dropdown-button
+{
+    background-color: rgb(27, 30, 32);
+    color: rgb(217, 217, 217);
+}
+
+.dropdown-content
+{
+    display: none;
+    position: absolute;
+    background-color: rgb(59, 63, 67);
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.dropdown:hover .dropdown-content
+{
+    display: block;
+}
+
+.dropdown-element
+{
+    background-color: rgb(59, 63, 67);
+    color: rgb(142, 143, 145);
+    border: none;
+    width: 125px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 17px;
+    text-align: left;
+    cursor: default;
+    transition-duration: 0.4s;
+}
+
+.dropdown-element:enabled:hover
+{
+    background-color: rgb(40, 43, 48);
+    color: rgb(217, 217, 217);
+}
+
+.dropdown-element:disabled
+{
+    background-color: rgba(40, 43, 48, 0.29);
+    color: rgba(217, 217, 217, 0.32);
+}
+
+.options-button
+{
+    background-color: rgb(40, 43, 48);
+    color: rgb(142, 143, 145);
+    height: 100%;
+    padding: 0 15px;
+    border: none;
+    text-align: center;
+    font-size: 17px;
+    transition-duration: 0.4s;
+}
+
+.options-button:hover
+{
+    background-color: rgb(27, 30, 32);
+    color: rgb(217, 217, 217);
+}
+
+.dialog
+{
+    background-color: rgb(59, 63, 67);
+    color: rgb(142, 143, 145);
+    border: 1px solid black;
+    font-size: 30px;
+    text-align: center;
+    cursor: default;
+}
+
+.titlebar
+{
+    height: 60px;
+}
+
+.dialog-button
+{
+    background-color: rgb(40, 43, 48);
+    color: rgb(142, 143, 145);
+    border: none;
+    width: 110px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 17px;
+    text-align: center;
+    cursor: default;
+    transition-duration: 0.4s;
+}
+
+.dialog-button:enabled:hover
+{
+    background-color: rgb(27, 30, 32);
+    color: rgb(217, 217, 217);
+}
+
+.dialog-button:disabled
+{
+    background-color: rgba(40, 43, 48, 0.29);
+    color: rgba(217, 217, 217, 0.32);
+}
+
+.dialog-input
+{
+    width: 50px;
+    background-color: rgb(59, 63, 67);
+    border-style: none;
+    border-width: 1px;
+    color: rgb(142, 143, 145);
+    font-size: 17px;
+}
+
+.colorize-button
+{
+    background-color: rgb(16, 61, 134);
+    color: rgb(160, 160, 160);
+    margin: 5px;
+    padding: 0 15px;
+    border: none;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 17px;
+    transition-duration: 0.4s;
+}
+
+.colorize-button:enabled:hover
+{
+    background-color: rgb(9, 37, 87);
+    color: rgb(217, 217, 217);
+}
+
+.colorize-button:disabled
+{
+    background-color: rgba(16, 61, 134, 0.41);
+    color: rgba(160, 160, 160, 0.45);
+}
+
+.color-picker
+{
+    height: 37px;
+    width: 50px;
+    align-self: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    transition-duration: 0.4s;
+}
+
+.color-picker:hover
+{
+    transform: scale(1.2);
+}
+
+.content
+{
+    background-color: rgb(40, 43, 48);
+    margin: 0;
+}
+
+.loader
+{
+    width: 48px;
+    height: 48px;
+    z-index: 10001;
+    position: absolute; left: 50%; top: 50%;
+
+    border: 5px solid #FFF;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+.loader-background
+{
+    background: rgba(134, 134, 134, 0.87);
+    height: 100%; width: 100%;
+    top: 0; left: 0;
+    z-index: 10000;
+    background-clip: initial;
+    background-origin: initial;
+    opacity: 0.5; filter: alpha(opacity=50);
+    position: absolute;
+}
